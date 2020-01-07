@@ -1,1 +1,1 @@
-https://api.telegram.org/bot<601100535:AAHUTjnmy-HaWowm5S9ygrPRCB7tUYa6E2E>/setWebHook?url=<https://botnoquedar.herokuapp.com/>
+https://api.telegram.org/bot<601100535:AAHUTjnmy-HaWowm5S9ygrPRCB7tUYa6E2E>/setWebHook?url=https://botnoquedar.herokuapp.com/
