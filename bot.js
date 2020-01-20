@@ -14,11 +14,12 @@ else {
 console.log('Bot server started in the ' + process.env.NODE_ENV + ' mode');
 
 bot.on('message', (msg) => {
-if (msg.includes('quedar')) {  
-  bot.sendMessage(msg.chat.id,'Gon no puede quedar,sry').then(() => {
-}
+  if (msg.includes('quedar')) {
+    bot.sendMessage(msg.chat.id,'Gon no puede quedar,sry').then(() => {
+      });
+  }
     // reply sent!
-  });
+
 });
 
 module.exports = bot;
