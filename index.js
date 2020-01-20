@@ -1,6 +1,14 @@
-const Telegraf = require('telegraf')
+const Telegraf = require('telegraf');
 
-const bot = new Telegraf('601100535:AAHUTjnmy-HaWowm5S9ygrPRCB7tUYa6E2E')
+const API_TOKEN = process.env.API_TOKEN || '601100535:AAHUTjnmy-HaWowm5S9ygrPRCB7tUYa6E2E';
+const PORT = process.env.PORT || 3000;
+const URL = process.env.URL || 'https://botnoquedar.herokuapp.com';
+
+const bot = new Telegraf(API_TOKEN);
+bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
+bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
+
+
 //bot.start((ctx) => ctx.reply('Welcome!'))
 //bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('message', (ctx) => {
@@ -13,7 +21,7 @@ bot.on('message', (ctx) => {
 
 	}
 	console.log(ctx);
-	
+
 })
 //bot.hears('quedar', (ctx) => ctx.reply('Hey there'))
 bot.launch()
