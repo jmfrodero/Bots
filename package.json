@@ -1,15 +1,18 @@
 {
   "name": "botnoquedar-heroku",
   "version": "1.0.0",
-  "description": "No puedo sry",
+  "description": "An in-depth guide on deploying your Discord.js bot on Heroku",
   "main": "index.js",
-  "dependencies": {
-    "telegraf": "^3.32.0"
+  "engines": {
+    "node": "8.x",
+    "npm": "*"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "author": "Jose",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telegraf/telegraf"
+  }
 }
