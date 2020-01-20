@@ -1,0 +1,15 @@
+{
+  "name": "botgon",
+  "version": "1.0.0",
+  "description": "No puedo sry",
+  "main": "index.js",
+  "dependencies": {
+    "telegraf": "^3.32.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose",
+  "license": "ISC"
+}
